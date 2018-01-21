@@ -1,7 +1,7 @@
-var app = require('./app_config.js')
+8080var app = require('./app_config.js')
 var db = require('./db_config.js')
 
-var http = app.listen(8080,'127.0.0.1',()=>{
+var http = app.listen(5000,'127.0.0.1',()=>{
     console.log('Servidor iniciado!')
 })
 

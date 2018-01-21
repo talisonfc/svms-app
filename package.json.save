@@ -1,11 +1,11 @@
+ls
 {
   "name": "webservice-sistema",
   "version": "1.0.0",
   "description": "webservice para o sistema de controle de vendas de agua mineral",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-	"start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "talison fernandes costa",
   "license": "ISC",
