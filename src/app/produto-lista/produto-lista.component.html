@@ -1,0 +1,61 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Tabela de produtos</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+        <mat-expansion-panel *ngFor="let p of produtos; index as i">
+            <mat-expansion-panel-header>
+                <mat-panel-title><b>{{p.nome}}</b></mat-panel-title>
+                <mat-panel-description>
+                    <button class="button-right-2" (click)="delete(p._id,i)"><i class="material-icons">delete</i></button>
+                    <button class="button-right-1"><i class="material-icons">create</i></button>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+
+            <mat-panel-description>
+                <table class="table">
+                    <tr><td><b>Nome</b></td><td>{{p.nome}}</td></tr>
+                    <tr><td><b>Descrição</b></td><td>{{p.descricao}}</td></tr>
+                    <tr><td><b>Valor</b></td><td>{{p.valor}}</td></tr>
+                    <tr><td><b>Sensor</b></td><td>{{p.id_sensor}}</td></tr>
+                </table>
+            </mat-panel-description>
+
+        </mat-expansion-panel>
+        
+        <!--table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Valor</th>
+                    <th>Sensor</th>
+                    <th>Operação</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr *ngFor="let p of produtos; index as i">
+                    <td>{{p._id}}</td>
+                    <td>{{p.nome}}</td>
+                    <td>{{p.valor}}</td>
+                    <td class="text-center">{{p.sensor ? '+' : '-'}}</td>
+                    <button mat-button (click)="delete(p._id,i)"><i class="material-icons">delete</i></button>
+                </tr>
+            </tbody>       
+        </table-->
+    </mat-card-content>
+</mat-card>
+
+<!--div *ngIf="produtos">
+    <div>
+        <mat-form-field>
+            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filtro">
+        </mat-form-field>
+    </div>
+
+    <mat-table #table [dataSource]="produtos">
+
+    </mat-table>
+</div-->

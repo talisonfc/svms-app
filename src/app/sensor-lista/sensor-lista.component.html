@@ -1,0 +1,42 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Lista de sensores</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <mat-expansion-panel *ngFor="let s of sensores; index as i">
+      <mat-expansion-panel-header>
+          <mat-panel-title><b>{{s.nome}}</b></mat-panel-title>
+          <mat-panel-description>
+              <button class="button-right-2" (click)="delete(s._id,i)"><i class="material-icons">delete</i></button>
+              <button class="button-right-1" ><i class="material-icons">create</i></button>
+          </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <mat-panel-description>
+          <table class="table">
+              <tr><td><b>ID</b></td><td>{{s._id}}</td></tr>
+              <tr><td><b>Nome</b></td><td>{{s.nome}}</td></tr>
+              <tr><td><b>Descrição</b></td><td>{{s.descricao}}</td></tr>
+          </table>
+      </mat-panel-description>
+
+    </mat-expansion-panel>
+    <!--table class="table table-bordered">
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Descricao</th>
+        <th>Valor</th>
+      </tr>
+
+      <tr *ngFor="let s of sensores; index as i">
+        <th>{{s._id}}</th>
+        <th>{{s.nome}}</th>
+        <th>{{s.descricao}}</th>
+        <th>{{s.valor}}</th>
+        <button mat-button (click)="delete(s._id,i)"><i class="material-icons">delete</i></button>
+      </tr>
+    </table-->
+  </mat-card-content>
+</mat-card>

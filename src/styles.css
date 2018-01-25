@@ -1,0 +1,32 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+.button-right-1{
+    width: 10px;
+    position: absolute;
+    right: 80px;
+    background-color: transparent;
+    border: 0;
+    color: #999;
+}
+
+.button-right-2{
+    width: 10px;
+    position: absolute;
+    right: 120px;
+    background-color: transparent;
+    border: 0;
+    color: #999;
+}
+
+
+@media (max-width: 600px){
+    button{
+        width: 100%;
+    }
+}

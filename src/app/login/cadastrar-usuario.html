@@ -1,0 +1,15 @@
+<div>
+    <mat-form-field>
+        <input matInput [(ngModel)]="data.usuario.usuario" placeholder="Email">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput [(ngModel)]="data.usuario.senha" type="password" placeholder="Senha">
+    </mat-form-field>
+
+    <div>
+        <button mat-raised-button (click)="cadastrar()" color="primary">Cadastrar</button>
+        <button mat-button color="primary" (click)="fechar()">Sair</button>
+        <label><b>{{msg}}</b></label>
+    </div>
+</div>

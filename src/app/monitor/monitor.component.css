@@ -1,0 +1,16 @@
+.valor{
+    font-size: 25px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.titulo{
+    padding: 5px;
+    background-color: #29b6f6;
+    color: white;
+}
+
+.saida-sensor{
+    padding: 0;
+    margin-bottom: 5px;
+}

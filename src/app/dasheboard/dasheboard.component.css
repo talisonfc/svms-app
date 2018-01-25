@@ -1,0 +1,54 @@
+#menu{
+    float: left;
+    width: 20%;
+}
+
+#show-menu{
+    display: none;
+}
+
+#menu button{
+    width: 100%;
+}
+
+#desktop{
+    float: right;
+    width: 100%;
+}
+
+.barra-de-notificacao{
+    font-weight: bold;
+    background-color: #039be5;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+@media (max-width: 600px){
+    #show-menu{
+        display: inline;
+        border: 0;
+        background-color: transparent;
+    }
+
+    #menu{
+        display: inherit;
+        align-items: center;
+    }
+
+    .barra-de-notificacao{
+        font-weight: bold;
+    }
+
+    .barra-de-notificacao button{
+        width: 100px;
+    }
+
+    #desktop{
+        width: 100%;
+    }
+
+    #usuario{   
+        font-size: 10px;
+    }
+}
