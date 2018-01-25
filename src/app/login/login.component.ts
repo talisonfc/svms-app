@@ -25,9 +25,9 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.usuario.usuario = 'tfccomputation@gmail.com'
-    this.usuario.senha = '1234'
-    this.login()
+    //this.usuario.usuario = 'tfccomputation@gmail.com'
+    //this.usuario.senha = '1234'
+    //this.login()
   }
 
   // texto para resposta ao sim
